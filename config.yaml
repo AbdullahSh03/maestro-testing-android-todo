@@ -10,9 +10,9 @@ flows:
 #   - plus-upgrade-test
 
 
-# platform:
-#  andriod:
-#   disableAnimations: true
+platform:
+ andriod:
+  disableAnimations: true
 
 #  ios:
 #   disableAnimations: true
