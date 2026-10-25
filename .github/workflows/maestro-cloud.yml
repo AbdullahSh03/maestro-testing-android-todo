@@ -19,7 +19,9 @@ jobs:
          env: 
            APP_APK_URL: https://github.com/AbdullahSh03/maestro-testing-android-todo/releases/download/Production/QAcart-Todo.apk
          run: |
-           curl --ssl -fail "$APP_APK_URL" -o app-release.apk
+           curl --fail --location --retry 3 --retry-all-errors --output app-release.apk "$APP_APK_URL"
+           test -s app-release.apk
+           unzip -t app-release.apk
            ls -lh app-release.apk
 
        - name: Run Maestro test cases
