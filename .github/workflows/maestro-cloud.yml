@@ -14,9 +14,17 @@ jobs:
 
      steps:
        - uses: actions/checkout@v4
+
        - name: Fetch the app under test
          env: 
            APP_APK_URL: https://github.com/AbdullahSh03/maestro-testing-android-todo/releases/download/Production/QAcart-Todo.apk
          run: |
            curl --ssl -fail "$APP_APK_URL" -o app-release.apk
            ls -lh app-release.apk
+
+       - name: Run Maestro test cases
+         uses: mobile-dev-inc/action-maestro-cloud@v2.0.2
+         with:
+           api-key: "${{secrets.MAESTRO_API_KEY}}"
+           project-id: ${{ secrets.MAESTRO_PROJECT_ID }}
+           app-file: app-release.apk
