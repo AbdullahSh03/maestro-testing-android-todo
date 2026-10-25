@@ -1,5 +1,5 @@
 flows:
-  - "tests/**"
+  - "Tests/**"
 
 
 # excutionOrder:
@@ -11,7 +11,7 @@ flows:
 
 
 platform:
- andriod:
+ android:
   disableAnimations: true
 
 #  ios:
@@ -43,4 +43,3 @@ platform:
 
 # excludeTags:
 #  - regression
-
