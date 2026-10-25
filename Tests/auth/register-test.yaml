@@ -1,0 +1,17 @@
+appId: com.qacart.todo_app
+---
+- launchApp:
+    clearState: true
+
+- runFlow: 
+    label: "Register Flow"
+    file: "../../flows/auth/register-flow.yaml"
+    env:
+        PASSWORD: "Test@1234"
+        
+
+- assertVisible:
+    id: "plan_name"
+    text: "Free plan"
+
+    

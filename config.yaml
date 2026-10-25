@@ -1,0 +1,46 @@
+flows:
+  - "tests/**"
+
+
+# excutionOrder:
+#  continueOnFailure: false
+#  flowOrder:
+#   - login-test
+#   - register-test
+#   - plus-upgrade-test
+
+
+# platform:
+#  andriod:
+#   disableAnimations: true
+
+#  ios:
+#   disableAnimations: true
+
+
+# testOutDir: ./maestro-output
+
+
+
+############################
+# Maestro cloud only
+# baseLineBranch: main
+
+# notification:
+#  email:
+#   enabled: true 
+#   recipients: [ "abood@gmail.com","ezz@gmail.com"]
+# slack:
+#  enabled: true 
+#  channles: ['qa-alert']
+
+############################
+
+
+
+# includeTags:
+#   - smoke
+
+# excludeTags:
+#  - regression
+
