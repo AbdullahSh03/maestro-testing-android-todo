@@ -5,7 +5,7 @@ appId: com.qacart.todo_app
 
 - runFlow: 
     label: "Register Flow"
-    file: "../../flows/auth/register-flow.yaml"
+    file: "../../Flows/auth/register-flow.yaml"
     env:
         PASSWORD: "Test@1234"
         

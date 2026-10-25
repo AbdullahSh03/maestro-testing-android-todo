@@ -7,7 +7,7 @@ tags:
     
 - runFlow: 
     label: "Login Flow"
-    file: "../../flows/auth/login-flow.yaml"
+    file: "../../Flows/auth/login-flow.yaml"
     env: 
         EMAIL: "user@qacart.com"
         PASSWORD: "Test@1234"
@@ -19,7 +19,7 @@ tags:
 # add the flow here 
 - runFlow:
     label: "Add New Todo"
-    file: "../../flows/todos/add-todo-flow.yaml"
+    file: "../../Flows/todos/add-todo-flow.yaml"
     env: 
         TODO_TEXT: "Learn MAestro"
         TODO_INDEX: 0

@@ -5,7 +5,7 @@ appId: com.qacart.todo_app
     
 - runFlow: 
     label: "Login Flow"
-    file: "../../flows/auth/login-flow.yaml"
+    file: "../../Flows/auth/login-flow.yaml"
     env: 
         EMAIL: "user@qacart.com"
         PASSWORD: "Test@1234"
@@ -18,7 +18,7 @@ appId: com.qacart.todo_app
 
 - runFlow:
     label: "Upgrade the plan "
-    file: "../../flows/plan/upgrade-flow.yaml"
+    file: "../../Flows/plan/upgrade-flow.yaml"
     env:
         PLAN_INDEX: 5
 
@@ -31,5 +31,4 @@ appId: com.qacart.todo_app
     text: "0 / 5"
 - assertVisible:
     id: "cancel_subscription_button"
-
 

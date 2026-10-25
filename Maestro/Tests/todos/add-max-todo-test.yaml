@@ -5,7 +5,7 @@ appId: com.qacart.todo_app
     
 - runFlow: 
     label: "Login Flow"
-    file: "../../flows/auth/login-flow.yaml"
+    file: "../../Flows/auth/login-flow.yaml"
     env: 
         EMAIL: "user@qacart.com"
         PASSWORD: "Test@1234"
@@ -16,7 +16,7 @@ appId: com.qacart.todo_app
 
 - runFlow:
     label: "Add New Todo"
-    file: "../../flows/todos/add-todo-flow.yaml"
+    file: "../../Flows/todos/add-todo-flow.yaml"
     env: 
         TODO_TEXT: "Learn MAestro1"
         TODO_INDEX: 0
@@ -25,7 +25,7 @@ appId: com.qacart.todo_app
 
 - runFlow:
     label: "Add New Todo"
-    file: "../../flows/todos/add-todo-flow.yaml"
+    file: "../../Flows/todos/add-todo-flow.yaml"
     env: 
         TODO_TEXT: "Learn MAestro2"
         TODO_INDEX: 1
@@ -34,7 +34,7 @@ appId: com.qacart.todo_app
 
 - runFlow:
     label: "Add New Todo"
-    file: "../../flows/todos/add-todo-flow.yaml"
+    file: "../../Flows/todos/add-todo-flow.yaml"
     env: 
         TODO_TEXT: "Learn MAestro3"
         TODO_INDEX: 2
@@ -43,7 +43,6 @@ appId: com.qacart.todo_app
 - assertVisible:
     id: "add_todo_button"
     enabled: false
-
 
 
 
